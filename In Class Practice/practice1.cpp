@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-	for (int i = 0; i < 101; i++) {
+	for (int i = 0; i < 100; i++) {
  		std::cout << "Hello World"  << std::endl;
 	}
 	return 0;
