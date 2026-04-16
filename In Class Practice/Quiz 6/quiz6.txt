@@ -1,7 +1,8 @@
 Question 1:
-
+Variable a is stack variable, while variable b is a heap variable.
 
 Question 2:
-
+Variable a is automatically deallocated.
 
 Question 3:
+There is a risk for a memory leak, which takes up more RAM and can cause a system shutdown.
