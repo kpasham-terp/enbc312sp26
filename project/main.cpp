@@ -114,16 +114,8 @@ public:
     int getHorsepower() const { return horsepower; }
 };
 
-// ---------------------------------------------------------------------------
-// Global Fleet
-// ---------------------------------------------------------------------------
-
 vector<Car*> fleet;
 int nextID = 1;
-
-// ---------------------------------------------------------------------------
-// Helper: find car by ID
-// ---------------------------------------------------------------------------
 
 Car* findByID(int targetID) {
     for (Car* c : fleet) {
@@ -131,10 +123,6 @@ Car* findByID(int targetID) {
     }
     return nullptr;
 }
-
-// ---------------------------------------------------------------------------
-// Menu Functions
-// ---------------------------------------------------------------------------
 
 void registerCar() {
     cout << "\nSelect car type:" << endl;
@@ -317,25 +305,18 @@ void sortCars() {
     listCars();
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
-
 int main() {
     int choice;
 
     while (true) {
-        cout << "\n========================================" << endl;
-        cout << "    Car Rental Management System" << endl;
-        cout << "========================================" << endl;
+        cout << "    Car Rental Management System\n" << endl;
         cout << "  1. Register a Car" << endl;
         cout << "  2. Deregister a Car" << endl;
         cout << "  3. Rent a Car" << endl;
         cout << "  4. Return a Car" << endl;
         cout << "  5. List All Cars" << endl;
         cout << "  6. Sort Cars" << endl;
-        cout << "  0. Exit" << endl;
-        cout << "========================================" << endl;
+        cout << "  0. Exit\n" << endl;
         cout << "Enter choice: ";
         cin >> choice;
 
